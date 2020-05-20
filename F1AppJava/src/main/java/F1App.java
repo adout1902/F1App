@@ -27,8 +27,8 @@ public class F1App
         MongoCollection<Document> drivers = database.getCollection("drivers");
 
         // find one document with new Document
-        Document student1 = drivers.find(new Document("_id", 1)).first();
-        System.out.println("Driver 1: " + student1.toJson());
+        Document driver1 = drivers.find(new Document("_id", 1)).first();
+        System.out.println("Driver 1: " + driver1.toJson());
 
 
     }
