@@ -14,7 +14,7 @@ public class F1App
     public static void main(String[] args)
     {
         ConnectionString connString = new ConnectionString(
-                "mongodb+srv://aaisha:aaisha1902@clusterf1-gof0m.gcp.mongodb.net/test?retryWrites=true&w=majority");
+                "mongodb+srv://<username>:<password>@clusterf1-gof0m.gcp.mongodb.net/test?retryWrites=true&w=majority");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connString)
                 .retryWrites(true)
